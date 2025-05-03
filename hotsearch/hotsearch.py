@@ -345,6 +345,7 @@ def main_job(logger):
 
 if __name__ == "__main__":
     # 首次立即执行
+    #  */10 * * * * /home/hotdog/hotsearch.sh >> /home/hotdog/hotsearch.log 2>&1 crontab 设置定时
     logger = setup_logger("hotsearch", "logs/hotsearch.log")
     main_job(logger)
 
